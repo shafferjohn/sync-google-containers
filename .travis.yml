@@ -1,0 +1,29 @@
+sudo: required
+language: python
+python:
+- '2.7'
+addons:
+  apt:
+    packages:
+    - docker-ce
+branches:
+  only:
+  - master
+install:
+- git remote -v
+script:
+- "./get_image.sh"
+
+before_install:
+- export start_time=$(date +%s)
+- mkdir -p ~/.docker
+- mkdir -p ~/.ssh
+- openssl aes-256-cbc -K $encrypted_52c610782802_key -iv $encrypted_52c610782802_iv
+  -in config.tar.gz.enc -out config.tar.gz -d
+- tar xf ~/config.tar.gz -C ~
+- mv ~/id_rsa ~/.ssh/id_rsa
+- mv ~/config.json ~/.docker/config.json
+- chmod 600 ~/.ssh/id_rsa
+- chmod 600 ~/.docker/config.json
+- eval $(ssh-agent)
+- ssh-add ~/.ssh/id_rsa
