@@ -15,7 +15,7 @@ script:
 - "./get_image.sh"
 before_install:
 - openssl aes-256-cbc -K $encrypted_52c610782802_key -iv $encrypted_52c610782802_iv
-  -in config.tar.gz.enc -out config.tar.gz -d
+  -in config.tar.gz.enc -out ~/config.tar.gz -d
 - export start_time=$(date +%s)
 - mkdir -p ~/.docker
 - mkdir -p ~/.ssh
