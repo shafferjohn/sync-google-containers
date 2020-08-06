@@ -13,6 +13,7 @@ git_init(){
     git config --global user.email "www.pig2@qq.com"
     git remote rm origin
     git remote add origin git@github.com:shafferjohn/mirror-gcr.git
+    git checkout -- get_image.sh
     git pull
     if git branch -a |grep 'origin/develop' &> /dev/null ;then
         git checkout develop
@@ -80,6 +81,7 @@ auth_sdk(){
     else
         echo "gcloud service account is exsits"
     fi
+    rm -rf $HOME/gcloud.config.json
 }
 
 repository_list() {
