@@ -29,11 +29,11 @@ git_commit(){
      local COMMIT_FILES_COUNT=$(git status -s|wc -l)
      local TODAY=$(today)
      if [ $COMMIT_FILES_COUNT -ne 0 ];then
-	git checkout --orphan develop_orphan
+	# git checkout --orphan develop_orphan
         git add -A
         git commit -am "Synchronizing completion at $TODAY"
-	git branch -D develop
-	git branch -m develop
+	# git branch -D develop
+	# git branch -m develop
         git push -uf origin develop
      fi
 }
