@@ -2,7 +2,7 @@
 
 GCR_NAMESPACE=gcr.io/google-containers
 #自行替换自己的Dockerhub
-DOCKERHUB_NAMESPACE=shafferjohn
+DOCKERHUB_NAMESPACE=syncgooglecontainers
 
 today(){
    date +%F
@@ -12,7 +12,7 @@ git_init(){
     git config --global user.name "Shaffer John"
     git config --global user.email "www.pig2@qq.com"
     git remote rm origin
-    git remote add origin git@github.com:shafferjohn/mirror-gcr.git
+    git remote add origin git@github.com:shafferjohn/sync-google-containers.git
     git checkout -- get_image.sh
     git pull
     if git branch -a |grep 'origin/develop' &> /dev/null ;then
@@ -29,9 +29,12 @@ git_commit(){
      local COMMIT_FILES_COUNT=$(git status -s|wc -l)
      local TODAY=$(today)
      if [ $COMMIT_FILES_COUNT -ne 0 ];then
+	git checkout --orphan develop_orphan
         git add -A
-        git commit -m "Synchronizing completion at $TODAY"
-        git push -u origin develop
+        git commit -am "Synchronizing completion at $TODAY"
+	git branch -D develop
+	git branch -m develop
+        git push -uf origin develop
      fi
 }
 
