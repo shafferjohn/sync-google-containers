@@ -1,3 +1,15 @@
+-------------------------------at 2020-08-12 17:13:49 sync image repositorys-------------------------------
+- syncgooglecontainers/zeppelin:v0.5.5_v1
+- syncgooglecontainers/zeppelin:master-86a1a199
+- syncgooglecontainers/zeppelin:master-81f02485
+- syncgooglecontainers/zeppelin:master
+- syncgooglecontainers/zeppelin:master-2d893aba
+- syncgooglecontainers/zeppelin:master-600f728d
+- syncgooglecontainers/zeppelin:master-a4db1688
+- syncgooglecontainers/zeppelin:v0.5.5_v2
+- syncgooglecontainers/zookeeper-install:0.1
+- syncgooglecontainers/zeppelin-proxy:latest
+- syncgooglecontainers/zeppelin-proxy:master
 - syncgooglecontainers/zeppelin:v0.5.5_v3
 - syncgooglecontainers/zeppelin:latest
 - syncgooglecontainers/volume-rbd:0.2
