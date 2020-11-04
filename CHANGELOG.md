@@ -1,3 +1,8 @@
+-------------------------------at 2020-11-04 11:09:30 sync image repositorys-------------------------------
+- syncgooglecontainers/ubuntu-nvidia-driver-installer:1739bdc5ed3bbd26a5323632d6774aef129c9b92
+- syncgooglecontainers/ubuntu-nvidia-driver-installer:2651e63a6f7fc3682923219fa94321674c046559
+- syncgooglecontainers/nvidia-gpu-device-plugin:1739bdc5ed3bbd26a5323632d6774aef129c9b92
+- syncgooglecontainers/nvidia-gpu-device-plugin:2651e63a6f7fc3682923219fa94321674c046559
 -------------------------------at 2020-11-02 11:17:35 sync image repositorys-------------------------------
 -------------------------------at 2020-10-31 11:09:21 sync image repositorys-------------------------------
 -------------------------------at 2020-10-30 11:16:22 sync image repositorys-------------------------------
