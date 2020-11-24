@@ -1,3 +1,7 @@
+-------------------------------at 2020-11-24 10:41:42 sync image repositorys-------------------------------
+- syncgooglecontainers/ubuntu-nvidia-driver-installer:e04e429f45bb4a2d98e3da54ceedc0b57e97d272
+- syncgooglecontainers/nvidia-gpu-device-plugin:e04e429f45bb4a2d98e3da54ceedc0b57e97d272
+- syncgooglecontainers/ingress-gce-404-server-with-metrics-amd64:v1.10.11
 -------------------------------at 2020-11-22 12:15:44 sync image repositorys-------------------------------
 -------------------------------at 2020-11-22 11:29:48 sync image repositorys-------------------------------
 -------------------------------at 2020-11-20 11:42:09 sync image repositorys-------------------------------
